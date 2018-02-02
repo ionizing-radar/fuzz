@@ -1,0 +1,42 @@
+10.11.1.22
+220 barry ESMTP Sendmail 8.11.6/8.11.6; Sat, 27 Jan 2018 18:26:24 +0200
+
+250 2.1.5 root <root@barry>
+
+10.11.1.72
+220 beta SMTP Server (JAMES SMTP Server 2.3.2) ready Sat, 27 Jan 2018 11:26:38 -0500 (EST)
+
+502 5.3.3 VRFY is not supported
+
+10.11.1.115
+220 tophat.acme.com ESMTP Sendmail 8.12.8/8.12.8; Sat, 27 Jan 2018 18:26:48 +0200
+
+250 2.1.5 root <root@tophat.acme.com>
+
+10.11.1.128
+220 dj.acme.local Microsoft ESMTP MAIL Service, Version: 5.0.2195.6713 ready at  Sat, 27 Jan 2018 18:26:51 +0200
+
+252 2.1.5 Cannot VRFY user, but will take message for <root@dj.acme.local>
+
+10.11.1.217
+220 hotline.localdomain ESMTP Postfix
+
+252 2.0.0 root
+
+10.11.1.227
+220 jd.acme.local Microsoft ESMTP MAIL Service, Version: 5.0.2195.5329 ready at  Sat, 27 Jan 2018 18:27:11 +0200
+
+252 2.1.5 Cannot VRFY user, but will take message for <root@jd.acme.local>
+
+10.11.1.229
+220 MAIL ESMTP
+
+502 Use HELO/EHLO first.
+
+
+Traceback (most recent call last):
+  File "smtpvrfy.py", line 16, in <module>
+    connect=s.connect((mail_server,25))
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 111] Connection refused
