@@ -14,7 +14,7 @@ else:
 
 buffer=["A"]
 counter=100
-while len(buffer) <= 50:
+while len(buffer) <= 30:
    buffer.append("A"*counter)
    counter=counter+200
 
